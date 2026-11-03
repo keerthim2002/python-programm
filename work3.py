@@ -150,9 +150,9 @@
 
 # ----- VARIENCE AND STANDARD DEVIATION -----
 
-a=np.array([50,50,50,50,50])
-b=np.array([40, 45, 50, 55, 60])
-c=np.array([10, 30, 50, 70, 90])
+# a=np.array([50,50,50,50,50])
+# b=np.array([40, 45, 50, 55, 60])
+# c=np.array([10, 30, 50, 70, 90])
 # print("mean of a : ",np.mean(a))
 # print("varience of a : ",np.var(a))
 # print("std of a : ",np.std(a))
