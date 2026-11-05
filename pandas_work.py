@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 # # print("pandas version : ",pd.__version__)
 
 # data= pd.Series([10,20,30,40])
@@ -55,13 +55,13 @@ import pandas as pd
 
                                                 #data frame
 
-data={
-    "name" : ["Anitha" , "Rahul" , "meera"],
-    "Age" : [22,24,23],
-    "course" : ["analytics" , "python" , "analytics"]
-}
+# data={
+#     "name" : ["Anitha" , "Rahul" , "meera"],
+#     "Age" : [22,24,23],
+#     "course" : ["analytics" , "python" , "analytics"]
+# }
 
-df=pd.DataFrame(data)
+# df=pd.DataFrame(data)
 # print(df)
 
 
@@ -83,4 +83,5 @@ df=pd.DataFrame(data)
 # print(df.columns)
 # print(df.info())
 # print(df.shape)
+
 

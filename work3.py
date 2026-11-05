@@ -1,4 +1,4 @@
-# import numpy as np
+import numpy as np
 
 # ===== ARRAY CREATION =====
 
@@ -32,16 +32,12 @@
 # print(numbers[7:])
 # print(numbers[2:6])
 # print(numbers[::-1])
-# numbers[5]=99
+# numbers[4]=99
 # print(numbers)
 
 # ===== CREATE A MATRIX =====
 
-# matrix=np.array([
-#     [1,2,3],
-#     [4,5,6],
-#     [7,8,9]
-# ])
+# matrix=np.arange(1,10).reshape(3,3)
 # print(matrix)
 # print("first row : ",matrix[0])
 # print("last column : ",matrix[:,2])
@@ -51,7 +47,7 @@
 
 # ===== RESHAPE AN ARRAY =====
 
-# collection=np.arange(1,25)
+collection=np.arange(1,25)
 # print(collection)
 
 # matrix=collection.reshape(4,6)
@@ -64,6 +60,14 @@
 # print(matrix.shape)
 # print(matrix_2.shape)
 # print(matrix_3.shape)
+
+
+# for rows,cols in [(4,6), (6,4), (2,12)]:
+#     result=collection.reshape(rows,cols)
+#     print(f"shape {rows} x {cols} : ")                   #another way
+#     print(result)
+#     print("shape : ",result.shape)
+
 
 # ===== ARRAY OPERATIONS =====
 
@@ -184,6 +188,8 @@
 #     [55, 60, 65], 
 #     [75, 80, 85]
 # ])
+# print(marks_matrix.ndim)
+# print(marks_matrix.shape)
 
 # print("sum of marks of each students are : ",np.sum(marks_matrix,axis=1))
 # print("Average of marks of each student are : ",np.mean(marks_matrix,axis=1))
@@ -192,12 +198,11 @@
 
 # total_score=np.sum(marks_matrix,axis=1)
 # highest_score=np.max(total_score)
-# highest_student=np.argmax(highest_score)
-# print(f"the {highest_student} student score the highest score with {highest_score} score ")
+# highest_student=np.argmax(total_score)
+# print(f"the {highest_student+1} student score the highest score with {highest_score} score ")
 
 
 # ----- RANDOM NUMBER GENERATION -----
-
 # np.random.seed(10)
 # random_num=np.random.randint(1,101,size=20)
 # print(random_num)
@@ -219,10 +224,11 @@
 # total_marks=np.sum(marks,axis=1)
 # print("Total marks of each students are : ",total_marks)
 
-# percentage=np.sum(marks,axis=1)*100
+# percentage=(np.sum(marks,axis=1)/400)*100
 # print(f"percentage of the marks of each students are {percentage}%")
 
 # score=np.sort(percentage)
 # print(score)
 # max_score=np.max(score)
-# print(f"{max_score}%")
+# max_std=np.argmax(percentage)
+# print(f"{max_score}% is the toppest percentage secured by {max_std+1}nd student")
