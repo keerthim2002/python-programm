@@ -72,3 +72,13 @@
 # df1=pd.DataFrame(data2)
 # print(df1)
 
+# inner_join=pd.merge(df,df1,on="Name")
+# print(inner_join)
+
+# left_join=pd.merge(df,df1,on="Name",how="left")
+# print(left_join)
+
+# right_join=pd.merge(df,df1,on="Name",how="right")
+# print(right_join)
+# outer_join=pd.merge(df,df1,on="Name",how="outer")
+# print(outer_join)
