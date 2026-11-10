@@ -2,7 +2,7 @@
 
 # ----- EMPLOYEE SALARY ANALYSIS -----
 
-# import numpy as np
+import numpy as np
 
 # salary=np.array([18000, 22000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000])
 # print("Average salary : ",np.mean(salary))
@@ -20,21 +20,30 @@
 
 
 # sales=np.array([12000, 15000, 18000, 10000, 22000, 25000, 20000])
+# Days=np.array(["monday" , "tuesday" , "wednesday" , "Thusday", " Friday" , "Saturday" , "Sunday"])
+# print(Days)
 # print("total weekly sales : ",np.sum(sales))
 # print("average daily sales : ",np.mean(sales))
 
 # highest_sales=np.max(sales)
 # lowest_sales=np.min(sales)
-# high_sales_day=np.argmax(sales)+1
-# low_sales_day=np.argmin(sales)+1
+# high_sales_day=np.argmax(sales)
+# low_sales_day=np.argmin(sales)
 
-# print(f"The highest sale of Rs {highest_sales} is on day {high_sales_day} ")
-# print(f"The lowest sale of Rs {lowest_sales} is on day {low_sales_day} ")
+# print(f"The highest sale of Rs {highest_sales} is on day {Days[high_sales_day]} ")
+# print(f"The lowest sale of Rs {lowest_sales} is on day {Days[low_sales_day]} ")
 
-# days=np.where(sales>18000)[0]+1
-# print("days with sales above 18000 : ",days)
 # sorted_sales=np.sort(sales)[::-1]
 # print("sorted sales from highest to lowest : ",sorted_sales)
+
+# print("Days with sales above 18000 : ")
+# d = (Days[sales>18000])
+# print(d)
+# s=sales[sales>18000]
+# print(s)
+# for day,amount in zip(d,s):                           #zip is used to combine 2 variable
+#     print(day,":",amount)
+
 
 
 # ----- ATTENDENCE ANALYSIS -----
@@ -57,6 +66,7 @@
 # ----- TEMPERATURE ANALYSIS -----
 
 # temperature=np.array([29, 31, 30, 32, 28, 35, 33])
+# day=np.array(["monday" , "tuesday" , "wednesday" , "thursday" , "Friday" , "Saturday" , "Sunday"])
 # print("average temperature : ",np.mean(temperature))
 # print("highest temperature : ",np.max(temperature))
 # print("lowest temperature : ",np.min(temperature))
@@ -68,6 +78,11 @@
 # days=np.where(temperature>30)[0]+1
 # print(f"{days} days have temperature exceeding 30 degree C")
 
+# d=temperature[temperature>30]
+# t=day[temperature>30]
+
+# for day,temp in zip(d,t):
+#     print(day,":",temp)
 
 # ----- IMAGE ARRAY BASICS -----
 
@@ -84,7 +99,10 @@
 # print("maximum pixel : ",np.max(image_array))
 # print("average pixel intensity : ",np.mean(image_array))
 
-# image_array[image_array<100]=0
-# image_array[image_array>=200]=225
+# mod_image=image_array.copy()
+# print(mod_image)
 
-# print(image_array)
+# mod_image[mod_image<100]=0
+# mod_image[mod_image>=200]=225
+
+# print(mod_image)

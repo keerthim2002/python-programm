@@ -202,13 +202,17 @@ collection=np.arange(1,25)
 # print(f"the {highest_student+1} student score the highest score with {highest_score} score ")
 
 
-# ----- RANDOM NUMBER GENERATION -----
+#----- RANDOM NUMBER GENERATION -----
 # np.random.seed(10)
 # random_num=np.random.randint(1,101,size=20)
 # print(random_num)
 # print("maximum number is : ",np.max(random_num))
 # print("minimum number is : ",np.min(random_num))
 # print("mean of the array is : ",np.mean(random_num))
+# above_50 = random_num[random_num>50]
+# print(above_50)
+# print("Count greater than 50 are : ",above_50.size)
+# print(np.sort(random_num))
 
 # ----- PERCENTAGE AND RANKING -----
 
@@ -223,12 +227,16 @@ collection=np.arange(1,25)
 # print(marks)
 # total_marks=np.sum(marks,axis=1)
 # print("Total marks of each students are : ",total_marks)
-
-# percentage=(np.sum(marks,axis=1)/400)*100
+# print(type(total_marks))
+# l=[10,20,30]
+# print(l)
+# s=marks.shape
+# print(type(s))
+# percentage=(np.sum(marks,axis=1)/(s[1]*100))*100
 # print(f"percentage of the marks of each students are {percentage}%")
 
 # score=np.sort(percentage)
 # print(score)
-# max_score=np.max(score)
+# max_score=np.max(percentage)
 # max_std=np.argmax(percentage)
 # print(f"{max_score}% is the toppest percentage secured by {max_std+1}nd student")
