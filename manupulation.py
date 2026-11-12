@@ -82,3 +82,57 @@
 # print(right_join)
 # outer_join=pd.merge(df,df1,on="Name",how="outer")
 # print(outer_join)
+
+
+
+# dataset={
+#     "Sales" : [25000,30000,20000,40000,28000],
+#     "Profit" : [5000,7000,4000,10000,6000]
+# }
+
+# df=pd.DataFrame(dataset)
+# print(df)
+# print(df.describe())
+
+# print(df["Sales"].count())
+
+# print(df["Sales"].mean())
+
+# print(df["Sales"].std())
+
+# print(df["Sales"].min())
+# print(df["Sales"].max())
+
+# print(df["Sales"].median())
+
+# print(df["Sales"].mode())
+
+# print(df.sort_values(by="Sales"))
+
+# print(df.sort_values(by="Sales",ascending=False))
+
+# print(df.sort_values(by=["Sales","Profit"],ascending=[False,True]))
+
+# df["Rank_sales"]=df["Sales"].rank(ascending=False)
+# print(df)
+
+# top_sales=df.sort_values(by="Sales",ascending=False).head(3)
+# print(top_sales)
+
+# print(df.tail(3))
+
+# df["Region"]=["North","South","east","west","southeast"]
+# print(df)
+
+# print(df.groupby("Region")["Sales"].sum())
+
+# print(df.groupby("Region")["Sales"].mean())
+# print(df.groupby("Region")["Sales"].min())
+# print(df.groupby("Region")["Sales"].max())
+
+# print(df.groupby("Region").agg({"Sales" : "sum", "Profit" : "mean"}))
+
+
+
+
+

@@ -1,4 +1,4 @@
-# import numpy as np
+import numpy as np
 
 # ===== ARRAY CREATION =====
 
@@ -34,6 +34,7 @@
 # print(numbers[::-1])
 # numbers[4]=99
 # print(numbers)
+# print(numbers[-3::-2])     #starting at -3rd position:no ending(till[0]position:range)
 
 # ===== CREATE A MATRIX =====
 
@@ -47,7 +48,7 @@
 
 # ===== RESHAPE AN ARRAY =====
 
-collection=np.arange(1,25)
+# collection=np.arange(1,25)
 # print(collection)
 
 # matrix=collection.reshape(4,6)
@@ -240,3 +241,5 @@ collection=np.arange(1,25)
 # max_score=np.max(percentage)
 # max_std=np.argmax(percentage)
 # print(f"{max_score}% is the toppest percentage secured by {max_std+1}nd student")
+
+
