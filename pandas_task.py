@@ -101,3 +101,6 @@
 # print(df.groupby("Product")["Profit"].mean())
 
 # print(df.groupby("Region").agg({"Sales" : "sum", "Profit" : "mean"}))
+
+# print(df["Sales"].corr(df["Profit"]))
+
