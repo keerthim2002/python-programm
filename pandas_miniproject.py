@@ -1,6 +1,6 @@
-import pandas as pd
+# import pandas as pd
 
-df=pd.read_csv("customer_churn_business_dataset.csv")
+# df=pd.read_csv("customer_churn_business_dataset.csv")
 # print(df)
 
 # print("rows : ",df.shape[0])
@@ -8,8 +8,8 @@ df=pd.read_csv("customer_churn_business_dataset.csv")
 # print(df.head())
 
 
-df.drop(["payment_method","payment_failures","discount_applied","price_increase_last_3m",
-"support_tickets","escalations","referral_count"],axis=1,inplace=True)
+# df.drop(["payment_method","payment_failures","discount_applied","price_increase_last_3m",
+# "support_tickets","escalations","referral_count"],axis=1,inplace=True)
 
 # print(df)
 
